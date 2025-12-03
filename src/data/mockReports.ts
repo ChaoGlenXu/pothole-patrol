@@ -1,0 +1,133 @@
+import { PotholeReport, DashboardStats } from '@/types/report';
+
+export const mockReports: PotholeReport[] = [
+  {
+    id: '1',
+    imageUrl: 'https://images.unsplash.com/photo-1515162816999-a0c47dc192f7?w=400&h=300&fit=crop',
+    location: {
+      address: '123 Main Street, Downtown',
+      lat: 40.7128,
+      lng: -74.0060,
+    },
+    severity: 4,
+    severityLabel: 'Critical',
+    estimatedCost: 450,
+    dimensions: {
+      diameter: '14 inches',
+      depth: '2.5 inches',
+    },
+    createdAt: '2024-01-15T10:30:00Z',
+    status: 'pending',
+    weather: 'Rain',
+    trafficLevel: 'high',
+  },
+  {
+    id: '2',
+    imageUrl: 'https://images.unsplash.com/photo-1621155346337-1d19476ba7d6?w=400&h=300&fit=crop',
+    location: {
+      address: '456 Oak Avenue, Midtown',
+      lat: 40.7580,
+      lng: -73.9855,
+    },
+    severity: 2,
+    severityLabel: 'Medium',
+    estimatedCost: 180,
+    dimensions: {
+      diameter: '8 inches',
+      depth: '1.2 inches',
+    },
+    createdAt: '2024-01-14T14:22:00Z',
+    status: 'reviewed',
+    weather: 'Clear',
+    trafficLevel: 'medium',
+  },
+  {
+    id: '3',
+    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=400&h=300&fit=crop',
+    location: {
+      address: '789 Elm Street, Uptown',
+      lat: 40.7829,
+      lng: -73.9654,
+    },
+    severity: 5,
+    severityLabel: 'Extreme',
+    estimatedCost: 720,
+    dimensions: {
+      diameter: '18 inches',
+      depth: '3.5 inches',
+    },
+    createdAt: '2024-01-13T09:15:00Z',
+    status: 'scheduled',
+    weather: 'Snow',
+    trafficLevel: 'high',
+  },
+  {
+    id: '4',
+    imageUrl: 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=400&h=300&fit=crop',
+    location: {
+      address: '321 Pine Road, Suburbs',
+      lat: 40.6892,
+      lng: -74.0445,
+    },
+    severity: 1,
+    severityLabel: 'Low',
+    estimatedCost: 85,
+    dimensions: {
+      diameter: '4 inches',
+      depth: '0.5 inches',
+    },
+    createdAt: '2024-01-12T16:45:00Z',
+    status: 'repaired',
+    weather: 'Clear',
+    trafficLevel: 'low',
+  },
+  {
+    id: '5',
+    imageUrl: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=400&h=300&fit=crop',
+    location: {
+      address: '555 Broadway, Theater District',
+      lat: 40.7590,
+      lng: -73.9845,
+    },
+    severity: 3,
+    severityLabel: 'High',
+    estimatedCost: 320,
+    dimensions: {
+      diameter: '11 inches',
+      depth: '1.8 inches',
+    },
+    createdAt: '2024-01-11T11:00:00Z',
+    status: 'pending',
+    weather: 'Cloudy',
+    trafficLevel: 'high',
+  },
+  {
+    id: '6',
+    imageUrl: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=400&h=300&fit=crop',
+    location: {
+      address: '888 Harbor View, Waterfront',
+      lat: 40.7023,
+      lng: -74.0167,
+    },
+    severity: 4,
+    severityLabel: 'Critical',
+    estimatedCost: 510,
+    dimensions: {
+      diameter: '15 inches',
+      depth: '2.8 inches',
+    },
+    createdAt: '2024-01-10T08:30:00Z',
+    status: 'reviewed',
+    weather: 'Rain',
+    trafficLevel: 'medium',
+  },
+];
+
+export const mockStats: DashboardStats = {
+  totalReports: 1247,
+  pendingReports: 342,
+  totalEstimatedCost: 287500,
+  avgSeverity: 2.8,
+  reportsThisWeek: 89,
+  criticalCount: 47,
+};
